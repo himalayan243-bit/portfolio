@@ -1,0 +1,380 @@
+Html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hey Hi this is "Vijay" | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f7fb;
+    color:#333;
+}
+
+header{
+    background:linear-gradient(135deg,#0f172a,#2563eb);
+    color:#fff;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+.hero h2{
+    font-size:1.3rem;
+    font-weight:400;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 28px;
+    background:#fff;
+    color:#2563eb;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    background:#fff;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+    z-index:1000;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+}
+
+nav ul li{
+    margin:15px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+}
+
+section{
+    padding:80px 10%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.section-title h2{
+    color:#2563eb;
+    font-size:2rem;
+}
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 2fr;
+    gap:40px;
+    align-items:center;
+}
+
+.profile-card{
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.profile-card img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:15px;
+}
+
+.about-text{
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    line-height:1.8;
+}
+
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.skill-card{
+    background:#fff;
+    padding:25px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.timeline{
+    max-width:800px;
+    margin:auto;
+}
+
+.timeline-item{
+    background:#fff;
+    margin-bottom:20px;
+    padding:25px;
+    border-left:5px solid #2563eb;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.resume-section{
+    text-align:center;
+    background:#2563eb;
+    color:white;
+    border-radius:15px;
+    padding:50px;
+}
+
+.resume-btn{
+    display:inline-block;
+    margin-top:20px;
+    background:#fff;
+    color:#2563eb;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:600;
+}
+
+.contact-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.contact-card{
+    background:#fff;
+    padding:25px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+footer{
+    background:#0f172a;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+}
+
+.dark-mode{
+    background:#0f172a;
+    color:#fff;
+}
+
+.dark-mode section{
+    background:#0f172a;
+}
+
+.toggle-btn{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    border:none;
+    background:#2563eb;
+    color:#fff;
+    padding:12px 18px;
+    border-radius:50px;
+    cursor:pointer;
+}
+
+@media(max-width:768px){
+    .hero h1{
+        font-size:2.2rem;
+    }
+
+    .about{
+        grid-template-columns:1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<header>
+    <div class="hero">
+        <h1>Hey hi this is "Vijay"</h1>
+        <h2>Senior Process Executive | Healthcare Payment Posting Specialist</h2>
+
+        <p>
+            Experienced Healthcare Revenue Cycle Management professional with
+            4+ years of expertise in Payment Posting, EOB Review, ERA Processing,
+            EFT Analysis, Insurance Payment Reconciliation, and Revenue Cycle Operations.
+        </p>
+
+        <a href="#contact" class="btn">Contact Me</a>
+    </div>
+</header>
+
+<section id="about">
+    <div class="section-title">
+        <h2>About Me</h2>
+    </div>
+
+    <div class="about">
+        <div class="profile-card">
+            <img src="vijay.jpg" alt="Profile Photo">
+            <h3>VijayaKumar</h3>
+            <p>Healthcare RCM Professional</p>
+        </div>
+
+        <div class="about-text">
+            <p>
+                I am a Healthcare Payment Posting professional with extensive
+                experience in handling EOBs, ERAs, EFTs, insurance payment analysis,
+                account reconciliation, and payment posting activities.
+                I specialize in maintaining payment accuracy, improving operational
+                efficiency, and supporting revenue cycle performance.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="skills">
+    <div class="section-title">
+        <h2>Core Skills</h2>
+    </div>
+
+    <div class="skills-grid">
+        <div class="skill-card">Payment Posting</div>
+        <div class="skill-card">EOB Review</div>
+        <div class="skill-card">ERA Processing</div>
+        <div class="skill-card">EFT Analysis</div>
+        <div class="skill-card">Account Reconciliation</div>
+        <div class="skill-card">Revenue Cycle Management</div>
+        <div class="skill-card">MS Excel</div>
+        <div class="skill-card">eCash Posting System</div>
+    </div>
+</section>
+
+<section id="experience">
+    <div class="section-title">
+        <h2>Professional Experience</h2>
+    </div>
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+            <h3>Senior Process Executive</h3>
+            <p><strong>Healthcare Revenue Cycle Management</strong></p>
+            <p>
+                Managing payment posting operations, reviewing EOBs,
+                processing ERAs, analyzing EFT payments, and ensuring
+                accurate account reconciliation.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="resume">
+    <div class="resume-section">
+        <h2>Resume</h2>
+        <p>Download my latest professional resume.</p>
+
+       <a href="resume.pdf" class="resume-btn" download>
+    Download Resume
+    </a>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="section-title">
+        <h2>Contact</h2>
+    </div>
+
+    <div class="contact-container">
+
+        <div class="contact-card">
+            <h3>Email</h3>
+            <p>himalayan243@gmail.com</p>
+        </div>
+
+        <div class="contact-card">
+            <h3>Phone</h3>
+            <p>+91 6369863577</p>
+        </div>
+
+        <div class="contact-card">
+            <h3>Location</h3>
+            <p>Tamil Nadu, India</p>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Vijay. All Rights Reserved.</p>
+</footer>
+
+<button class="toggle-btn" onclick="toggleMode()">🌙</button>
+
+<script>
+function toggleMode() {
+    document.body.classList.toggle("dark-mode");
+}
+</script>
+
+</body>
+</html>
